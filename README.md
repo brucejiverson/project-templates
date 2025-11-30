@@ -50,3 +50,7 @@ Requirements (01) ──────────────► Acceptance Tests
 make fix    # Auto-format
 make dev    # Lint, typecheck, test
 ```
+
+## Detailed Guidance
+
+See [PLAYBOOK.md](PLAYBOOK.md) for comprehensive process documentation, examples, and checklists.
