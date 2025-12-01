@@ -44,6 +44,8 @@ Break implementation into incremental phases.
 
 **Future Phases:** Additional capabilities to add after MVP is validated.
 
+> **Guidance**: Resist the urge to design everything upfront. Define the MVP path first.
+
 ## Integration Tests
 
 How do we verify components work together?
