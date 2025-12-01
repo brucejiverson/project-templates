@@ -1,21 +1,21 @@
 # Project Definition Templates
 
-Templates for collaborative AI-assisted software development. Human describes the problem, AI fills out templates and asks clarifying questions, human reviews, AI implements.
+Templates for collaborative AI-assisted development. Works for software, hardware, or hybrid projects. Human describes the problem, AI fills out templates and asks clarifying questions, human reviews, AI implements.
 
 ## Documents
 
 | Document | Purpose |
 |----------|---------|
-| [01_concept.md](01_concept.md) | WHAT and WHY - problem, requirements, scope |
-| [02_implementation.md](02_implementation.md) | HOW - architecture, technology choices |
-| [03_code_map.md](03_code_map.md) | SPECIFIC structure - files, functions, dependencies |
+| [01_concept.md](01_concept.md) | WHAT and WHY - problem, requirements, scope, prior art |
+| [02_implementation.md](02_implementation.md) | HOW - architecture, technology/material choices, failure modes |
+| [03_design_map.md](03_design_map.md) | SPECIFIC structure - files, parts, functions, dependencies |
 
 ## Process
 
 1. AI fills out concept doc, human reviews
 2. AI fills out implementation doc, human reviews
-3. AI fills out code map, human reviews
-4. AI implements, runs `make dev` to validate
+3. AI fills out design map, human reviews
+4. AI implements, validates (software: `make dev`; hardware: build and test)
 
 See [PLAYBOOK.md](PLAYBOOK.md) for guidance and common pitfalls.
 

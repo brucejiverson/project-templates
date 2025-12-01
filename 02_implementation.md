@@ -8,33 +8,65 @@ What are the main components? How do they connect?
 [Component A] → [Component B] → [Component C]
 ```
 
+> **Guidance**: For software - show data/control flow between modules. For hardware - show mechanical/electrical connections between subsystems. For hybrid - show both.
+
 ## Components
 
-| Component | Responsibility | Interfaces |
-|-----------|----------------|------------|
-|           |                |            |
+| Component | Responsibility | Interfaces | Notes |
+|-----------|----------------|------------|-------|
+|           |                |            |       |
 
-## Technology Choices
+> **Guidance**: For software - modules, services, libraries. For hardware - subsystems, assemblies, mechanisms. Interface = how components connect (API, shaft coupling, signal wire, fastener pattern).
 
-What tools, languages, or frameworks will be used? Why?
+## Technology & Material Choices
+
+What tools, languages, frameworks, materials, or manufacturing methods will be used? Why?
+
+| Choice | Alternatives Considered | Why This One |
+|--------|------------------------|--------------|
+|        |                        |              |
+
+> **Guidance**: Document the reasoning. "304 stainless because it resists hydrogen peroxide" or "Python because team knows it" - both valid if explicit.
 
 ## External Dependencies
 
-List third-party services, APIs, or libraries the system relies on. Note any relevant limitations or terms.
+List third-party services, APIs, libraries, or purchased components the system relies on.
 
-## Data Flow
+| Dependency | Purpose | Source | Notes |
+|------------|---------|--------|-------|
+|            |         |        |       |
 
-How does information move through the system?
+> **Guidance**: Note lead times, single-source risks, licensing terms, or version constraints.
+
+## Data / Material Flow
+
+How does information or material move through the system?
 
 ```
 [Input] → [Process] → [Output]
 ```
 
+> **Guidance**: For software - data transformations. For hardware - material path, force transmission, signal flow.
+
 ## Key Decisions
 
-Document significant design choices. For each:
-- What alternatives were considered
-- What was chosen and why
+Document significant design choices beyond technology/materials.
+
+| Decision | Chosen Approach | Alternatives | Rationale |
+|----------|-----------------|--------------|-----------|
+|          |                 |              |           |
+
+> **Guidance**: Focus on decisions that would be hard to reverse. "Why this architecture?" not "why this variable name?"
+
+## Failure Modes
+
+What could go wrong? Focus on likely and high-impact failures.
+
+| Component | Failure Mode | Consequence | Mitigation |
+|-----------|--------------|-------------|------------|
+|           |              |             |            |
+
+> **Guidance**: Not exhaustive FMEA - just the obvious risks worth addressing in design. Software: crashes, data loss, security issues. Hardware: wear, misalignment, jamming, user error.
 
 ## Phased Approach
 
@@ -44,16 +76,32 @@ Break implementation into incremental phases.
 
 **Future Phases:** Additional capabilities to add after MVP is validated.
 
-> **Guidance**: Resist the urge to design everything upfront. Define the MVP path first.
+> **Guidance**: Resist the urge to design everything upfront. Define the MVP path first. What's the minimum to prove this works?
 
-## Integration Tests
+## Verification
 
-How do we verify components work together?
+How do we verify components work correctly and together?
 
-| Integration Point | Test Approach |
-|-------------------|---------------|
-|                   |               |
+| What to Verify | Test Approach |
+|----------------|---------------|
+|                |               |
 
-## Risks
+> **Guidance**: For software - unit tests, integration tests. For hardware - fit checks, functional tests, load tests. Be specific enough to actually do them.
 
-What could go wrong? How do we mitigate it?
+## Bill of Materials
+
+| Component | Qty | Est. Cost | Source | Lead Time |
+|-----------|-----|-----------|--------|-----------|
+|           |     |           |        |           |
+
+**Estimated Total:** $___
+
+> **Guidance**: Skip for pure software. For hardware: flag single-source dependencies and long-lead items. Note volume pricing if scaling is in scope.
+
+## Open Design Tasks
+
+Unresolved decisions and incomplete work.
+
+- [ ] Description of open item
+
+> **Guidance**: Working backlog. Update as design progresses. These become implementation tasks once resolved.
