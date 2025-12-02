@@ -1,5 +1,23 @@
 # CLAUDE.md - AI Coding Guidelines
 
+## Creating a New Project
+
+When the user asks to "create a new project called X" or similar:
+
+1. **Create new directory** as sibling: `/home/bruce/software_projects/X/`
+2. **Initialize git**: `git init` in the new directory
+3. **Copy and customize these files:**
+   - `pyproject.template.toml` → `pyproject.toml` (replace `project_name` with `X`)
+   - `Makefile.template` → `Makefile` (replace `project_name` with `X`)
+   - `CLAUDE.md` (update project structure section with `X`)
+   - `.gitignore` (copy as-is)
+   - `01_concept.md`, `02_implementation.md`, `03_design_map.md`, `PLAYBOOK.md` (copy as-is)
+4. **Create directories:**
+   - `src/X/` with `__init__.py`
+   - `tests/` with `__init__.py` and a placeholder test
+5. **Create `README.md`** for the new project
+6. **Do NOT copy** the template's README.md or .git/
+
 ## Build/Test Commands
 
 ```bash
