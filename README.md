@@ -19,7 +19,9 @@ bash plugins/engineering/skills/new-project/new_project.sh seed-drum        # cr
 
 ## Use the agents in an existing project
 
-Add to the project's `.claude/settings.json`:
+One-off install (Claude Code 2.1.275+): `/plugin install engineering --marketplace brucejiverson/project-templates`.
+
+To make it part of the project for everyone who clones it, add to the project's `.claude/settings.json`:
 
 ```json
 {
