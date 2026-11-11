@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "project-templates": {
+      "source": { "source": "github", "repo": "brucejiverson/project-templates" }
+    }
+  },
+  "enabledPlugins": {
+    "engineering@project-templates": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "engineering",
+  "description": "Engineering subagents and skills shared across projects: code review, debugging, Python, test automation, refactoring, documentation, performance, embedded, mechanical design and V-model systems engineering; skills to start a new project, start a hardware module, collect bought-part data and draw cables.",
+  "version": "1.0.0",
+  "keywords": ["python", "hardware", "systems-engineering", "v-model", "code-review", "testing"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "project-templates",
+  "owner": { "name": "Bruce Iverson" },
+  "metadata": {
+    "description": "Shared agents and skills for all of Bruce's projects. Install once per project; improvements made here reach every project on the next plugin update.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "engineering",
+      "source": "./plugins/engineering",
+      "description": "Engineering subagents (code review, debugging, Python, tests, refactoring, docs, performance, embedded, mechanical, systems engineering) and skills for starting projects and hardware modules.",
+      "category": "engineering"
+    }
+  ]
+}
